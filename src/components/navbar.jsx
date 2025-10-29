@@ -4,8 +4,8 @@ import {Button} from './ui/button'
 
 function Navbar() {
   return (
-    <header className='flex flex-row relative gap-0 h-fit items-center text-black bg-white backdrop-blur-[10px] border-b border-gray-50 w-full py-0 xl:px-20 lg:px-10'>
-      <nav className='px-10 py-4 w-full flex-between'>
+    <header>
+      <nav>
         <div className='flex-between gap-10'>
             <div className='size-10 rounded-lg bg-black'>
 

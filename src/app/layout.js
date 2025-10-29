@@ -1,4 +1,5 @@
 import { Roboto } from "next/font/google";
+import { ReactLenis } from '@/lib/lenis'
 import "./globals.css";
 
 const inter = Roboto({ subsets: ["latin"], });
@@ -12,7 +13,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${inter.className}`}>
-        {children}
+        <ReactLenis root>
+          {children}
+        </ReactLenis>
       </body>
     </html>
   );
