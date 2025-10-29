@@ -13,6 +13,9 @@ gsap.registerPlugin(ScrollTrigger)
 function Hero() {
 
     useGSAP(() => {
+
+        gsap.fromTo('.content-title,.content-description,.content-buttons,.content-stars',{ opacity: 0 }, { opacity: 1, duration: 0.7, stagger: 0.2, ease: 'power1.inOut'})
+
         const imageTween = gsap.timeline({
             scrollTrigger: {
                 trigger: '.hero-image',
@@ -34,11 +37,11 @@ function Hero() {
             <div className='wrapper flex-x-center w-full gap-30 px-20'>
                 <div className='content'>
                     <div className='content-text'>
-                        <h1 className='heading-1 text-gray-950 font-medium'>
+                        <h1 className='content-title heading-1 text-gray-950 font-medium'>
                             Fragment OS Your Second Brain
                         </h1>
 
-                        <p className='text-l text-gray-500 font-normal'>
+                        <p className='content-description text-l text-gray-500 font-normal'>
                             Fragment OS is an all-in-one Notion system that centralizes tasks,
                             projects, notes, resources, and everything in between.
                         </p>
@@ -53,7 +56,7 @@ function Hero() {
                         </Button>
                     </div>
 
-                    <div className='flex-x-center gap-2'>
+                    <div className='content-stars flex-x-center gap-2'>
                         <div className='flex gap-2 justify-center'>
                             <StarIcon fill="#FFCF33" className='text-[#FFCF33]' />
                             <StarIcon fill="#FFCF33" className='text-[#FFCF33]' />
