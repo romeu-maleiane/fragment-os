@@ -31,6 +31,10 @@ body {
   @apply flex flex-col items-center;
 }
 
+@utility flex-col-center {
+  @apply flex flex-col items-center justify-center;
+}
+
 @utility heading-1 {
   font-size: 3.5rem;
   line-height: 1.2em;
@@ -41,13 +45,32 @@ body {
   line-height: 1.5em;
 }
 
+@utility text-m {
+  font-size: 1rem;
+  line-height: 1.5em;
+}
+
 @utility text-s {
   font-size: var(--text-sm);
   line-height: 1.5em;
 }
 
+@utility text-xs {
+  font-size: var(--text-xs);
+  line-height: 1.5em;
+}
+
 @utility personalized-container {
   @apply w-full py-0 xl:px-20 lg:px-10;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 40s linear infinite;
 }
 
 @layer components {
