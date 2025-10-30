@@ -87,22 +87,67 @@ body {
   .hero {
     @apply pb-40 h-fit personalized-container;
 
-    .content {
-      @apply max-w-3xl flex-x-center gap-12;
+    .wrapper {
+      @apply flex-x-center w-full gap-30 px-20;
+    
+      .content {
+        @apply max-w-3xl flex-x-center gap-12;
 
-      .content-text {
-        @apply flex-x-center gap-6 text-center pt-48;
+        .content-text {
+          @apply flex-x-center gap-6 text-center pt-48;
+        }
+
+        .content-buttons {
+          @apply flex-between gap-4 w-fit;
+        }
       }
 
-      .content-buttons {
-        @apply flex-between gap-4 w-fit;
+      .hero-image {
+        @apply lg:h-178 md:h-134 lg:w-250 md:w-186 w-87 h-67 relative border-4 rounded-xl overflow-hidden border-gray-950;
+        will-change: transform;
+        transform: perspective(1200px);
       }
     }
+  }
 
-    .hero-image {
-      @apply lg:h-178 md:h-134 lg:w-250 md:w-186 w-87 h-67 relative border-4 rounded-xl overflow-hidden border-gray-950;
-      will-change: transform;
-      transform: perspective(1200px);
+  .features {  
+    @apply personalized-container;
+
+    .wrapper {
+      @apply flex-x-center w-full gap-6 xl:px-30 px-10;
+
+      div > h2 {
+        @apply heading-1 text-gray-950 font-medium;
+      }
+
+      div > h2 + p {
+        @apply py-6 text-l text-gray-500 font-normal;
+      }
+
+      .feature-card-highlited {
+        @apply w-full lg:h-150 md:h-115 h-108 bg-gray-50 rounded-4xl border border-gray-100 pt-8 overflow-hidden;
+        
+        .feature-image {
+          @apply lg:h-296 md:h-125 lg:w-300 md:w-156 h-71 w-72 absolute lg:top-0 lg:left-90 top-40 left-[50%] lg:translate-x-0 translate-x-[-50%] border-8 border-gray-950 rounded-2xl;
+          transform: perspective(1200px);
+        }
+      }
+
+      .feature-card-group {
+        @apply grid lg:grid-cols-3 lg:grid-rows-1 grid-rows-3 gap-6;
+
+        .feature-card {
+          @apply p-8 bg-gray-50 rounded-3xl;
+
+          h3 {
+            @apply text-l font-semibold pt-6 pb-3;
+          }
+
+          p {
+            @apply text-m text-gray-500 font-normal;
+          }
+        }
+      }
     }
   }
 }
