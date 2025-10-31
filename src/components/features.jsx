@@ -23,8 +23,8 @@ function Features() {
                 scrollTrigger: {
                     trigger: '.feature-card-group',
                     start: 'top 80%',
-                    end: 'top 5%',
-                    toggleActions: 'play reverse play reverse'
+                    end: 'bottom 20%',
+                    toggleActions: 'play reverse play reverse',
                 }
             })
     

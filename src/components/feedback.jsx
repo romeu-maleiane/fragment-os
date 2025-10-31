@@ -1,12 +1,29 @@
+'use client'
 import React from 'react'
 import StarIcon from '@mui/icons-material/Star';
 import StarHalfIcon from '@mui/icons-material/StarHalf';
 import Image from 'next/image'
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
 
 function Feedback() {
+
+    useGSAP(() => {
+        const feedbackCardTween = gsap.timeline({
+                scrollTrigger: {
+                    trigger: '#feedback-card',
+                    start: 'top 85%',
+                    end: 'bottom 20%',
+                    toggleActions: 'play reverse play reverse',
+                }
+            })
+    
+        feedbackCardTween.fromTo('#feedback-card',{ opacity: 0 }, { opacity: 1, duration: 0.4, ease: 'power1.inOut' })
+    })
+
     return (
         <section className='flex-x-center py-40'>
-            <div className='flex-x-center gap-4 py-6 sm:w-120 w-90'>
+            <div id='feedback-card' className='flex-x-center gap-4 py-6 sm:w-120 w-90'>
                 <div className='flex gap-2 justify-center'>
                     <StarIcon fill="#FFCF33" className='text-[#FFCF33]' />
                     <StarIcon fill="#FFCF33" className='text-[#FFCF33]' />
