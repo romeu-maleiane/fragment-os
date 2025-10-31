@@ -30,18 +30,18 @@ function Features2() {
     })
 
     return (
-        <section className='features-2 flex-x-center personalized-container'>
-            <div className='wrapper flex-x-center gap-16 px-10'>
+        <section className='features-2'>
+            <div className='wrapper'>
                 <div className='max-w-3xl text-center'>
-                    <h2 className='text-4xl text-gray-950 font-semibold pb-6'>
+                    <h2>
                         Stay focused and organized
                     </h2>
-                    <p className='text-m text-gray-500 font-normal'>
+                    <p>
                         Empower coaches, educators, and trainers to seamlessly craftcomprehensive learning experiences.
                     </p>
                 </div>
 
-                <div className='features grid md:grid-cols-3 md:grid-rows-2 grid-cols-1 grid-rows-6 gap-10'>
+                <div className='features'>
                     <FeatureCard2 icon={<Task />} title={'Projects and Tasks'} description={'Effortlessly manage, track, and prioritize your tasks and projects.'} />
                     <FeatureCard2 icon={<StickyNote2 />} title={'Resources and Notes'} description={'Effortlessly manage resources, notes, and connect them to projects.'} />
                     <FeatureCard2 icon={<Flag />} title={'Goals Tracker'} description={'Easily manage goals and todos, reach what you want, track progress.'} />

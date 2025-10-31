@@ -157,8 +157,22 @@ body {
   }
 
   .features-2 {
-    .wrapper {
+    @apply flex-x-center personalized-container;
 
+    .wrapper {
+      @apply flex-x-center gap-16 px-10;
+
+      div > h2 {
+        @apply text-4xl text-gray-950 font-semibold pb-6;
+      }
+
+      div > h2 + p {
+        @apply text-m text-gray-500 font-normal;
+      }
+
+      .features {
+        @apply grid md:grid-cols-3 md:grid-rows-2 grid-cols-1 grid-rows-6 gap-10;
+      }
     
     }
   }
