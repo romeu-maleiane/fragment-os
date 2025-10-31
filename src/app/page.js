@@ -3,6 +3,7 @@ import Hero from "@/components/hero"
 import TestimonialRow from "@/components/testimonialRow"
 import Features from "@/components/features"
 import Feedback from "@/components/feedback"
+import Features2 from "@/components/features2"
 
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <TestimonialRow />
       <Features />
       <Feedback />
+      <Features2 />
     </main>
   );
 }

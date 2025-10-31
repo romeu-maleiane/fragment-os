@@ -155,6 +155,23 @@ body {
       }
     }
   }
+
+  .features-2 {
+    .wrapper {
+
+    
+    }
+  }
+
+  .feature-card-2 {
+    h3 {
+      @apply text-l font-semibold pt-6 pb-3;
+    }
+
+    p {
+      @apply text-m text-gray-500 font-normal;
+    }
+  }
 }
 
 @theme inline {
