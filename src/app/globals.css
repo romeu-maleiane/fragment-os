@@ -40,6 +40,11 @@ body {
   line-height: 1.2em;
 }
 
+@utility heading-3 {
+  font-size: var(--text-2xl);
+  line-height: 1.4em;
+}
+
 @utility text-l {
   font-size: var(--text-xl);
   line-height: 1.5em;
