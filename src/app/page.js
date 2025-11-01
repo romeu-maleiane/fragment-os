@@ -5,6 +5,7 @@ import Features from "@/components/features"
 import Feedback from "@/components/feedback"
 import Features2 from "@/components/features2"
 import Features3 from "@/components/features3"
+import Testimonials from "@/components/testimonials";
 
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <Feedback />
       <Features2 />
       <Features3 />
+      <Testimonials />
     </main>
   );
 }

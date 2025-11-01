@@ -88,6 +88,14 @@ body {
   animation: marquee 40s linear infinite;
 }
 
+.animate-marquee-reverse-45 {
+  animation: marquee 45s linear infinite reverse;
+}
+
+.animate-marquee-reverse {
+  animation: marquee 55s linear infinite reverse;
+}
+
 @layer components {
   header {
     @apply z-50 flex-between fixed gap-0 h-fit text-black bg-white/70 border-b border-gray-50 personalized-container;
@@ -229,6 +237,14 @@ body {
           }
         }
       }
+    }
+  }
+
+  .testimonials {
+    @apply space-y-6 w-full overflow-hidden relative;
+    .overlay {
+      @apply  absolute top-0 h-full w-full z-10;
+      background-image: radial-gradient(transparent,white 75%);
     }
   }
 }
