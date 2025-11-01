@@ -43,7 +43,7 @@ function Features3() {
                 <div className='feature-3-card-group'>
                     <div className='feature-3-card'>
                         <div className='feature-3-card-image'>
-                            <Image src={'/feature-image_1.png'} height={300} width={300} className='object-fill object-center scale-150' />
+                            <Image src={'/feature-image_1.png'} height={300} width={300} alt='feature image 1' className='object-fill object-center scale-150' />
                         </div>
                         <h3>
                             Manage your Projects and Tasks
@@ -54,7 +54,7 @@ function Features3() {
                     </div>
                     <div className='feature-3-card'>
                         <div className='feature-3-card-image'>
-                            <Image src={'/feature-image_2.png'} height={300} width={300} className='object-fill object-center md:scale-200 scale-150' />
+                            <Image src={'/feature-image_2.png'} height={300} width={300} alt='feature image 2' className='object-fill object-center md:scale-200 scale-150' />
                         </div>
                         <h3>
                             Manage your Projects and Tasks
@@ -65,7 +65,7 @@ function Features3() {
                     </div>
                     <div className='feature-3-card'>
                         <div className='feature-3-card-image'>
-                           <Image src={'/feature-image_3.png'} height={300} width={300} className='object-fill object-center scale-200' />
+                           <Image src={'/feature-image_3.png'} height={300} width={300} alt='feature image 3' className='object-fill object-center scale-200' />
                         </div>
                         <h3>
                             Manage your Projects and Tasks

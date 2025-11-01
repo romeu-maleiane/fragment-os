@@ -247,6 +247,21 @@ body {
       background-image: radial-gradient(transparent,white 75%);
     }
   }
+
+  .pricing {
+    @apply personalized-container flex-x-center py-40;
+    .wrapper {
+      @apply flex-x-center gap-16 px-10;
+
+      div > h2 {
+        @apply heading-2 text-gray-950 font-semibold pb-6;
+      }
+
+      div > h2 + p {
+        @apply text-xl text-gray-500 font-normal;
+      }
+    }
+  }
 }
 
 @theme inline {
