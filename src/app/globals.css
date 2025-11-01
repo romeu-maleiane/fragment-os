@@ -40,13 +40,23 @@ body {
   line-height: 1.2em;
 }
 
+@utility heading-2 {
+  font-size: var(--text-4xl);
+  line-height: 1.3em;
+}
+
 @utility heading-3 {
+  font-size: 1.750rem;
+  line-height: 1.4em;
+}
+
+@utility heading-4 {
   font-size: var(--text-2xl);
   line-height: 1.4em;
 }
 
 @utility text-l {
-  font-size: var(--text-xl);
+  font-size: var(--text-lg);
   line-height: 1.5em;
 }
 
@@ -163,7 +173,7 @@ body {
       @apply flex-x-center gap-16 px-10;
 
       div > h2 {
-        @apply text-4xl text-gray-950 font-semibold pb-6;
+        @apply heading-2 text-gray-950 font-semibold pb-6;
       }
 
       div > h2 + p {
@@ -184,6 +194,41 @@ body {
 
     p {
       @apply text-m text-gray-500 font-normal;
+    }
+  }
+
+  .features-3 {
+    @apply personalized-container flex-x-center py-40;
+    .wrapper {
+      @apply flex-x-center gap-16 px-5;
+
+      div > h2 {
+        @apply heading-2 text-gray-950 font-semibold pb-6;
+      }
+
+      div > h2 + p {
+        @apply text-l text-gray-500 font-normal;
+      }
+
+      .feature-3-card-group {
+        @apply w-full grid lg:grid-cols-3 lg:grid-rows-1 grid-cols-1 grid-rows-3 lg:gap-6 gap-16;
+
+        .feature-3-card {
+          @apply w-full;
+          .feature-3-card-image {
+            @apply flex-x-center p-8 bg-gray-50 rounded-3xl;
+
+          }
+
+          h3 {
+            @apply heading-4 font-semibold pt-6 pb-3;
+          }
+
+          p {
+            @apply text-m text-gray-500 font-normal;
+          }
+        }
+      }
     }
   }
 }
