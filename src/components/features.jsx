@@ -33,7 +33,7 @@ function Features() {
 
 
     return (
-        <section className='features'>
+        <section id='features'>
             <div className='wrapper'>
                 <div className='text-center max-w-3xl'>
                     <h2>Arrange all within one spot</h2>

@@ -1,34 +1,33 @@
 import React from 'react'
 import Link from 'next/link'
 import {Button} from './ui/button'
+import Image from 'next/image'
 
 function Navbar() {
   return (
     <header>
       <nav>
         <div className='flex-between gap-10'>
-            <div className='size-10 rounded-lg bg-black'>
-
-            </div>
+            <Image src={'/logo.png'} height={20} width={20} alt='logo' className='size-10 object-cover object-center rounded-lg bg-black' />
 
             <ul className='flex-between gap-10'>
                 <li className='text-gray-500 hover:text-gray-950'>
-                    <Link href={'#'}>
+                    <Link href={'#hero'}>
                         Home
                     </Link>
                 </li>
                 <li className='text-gray-500 hover:text-gray-950'>
-                    <Link href={'#'}>
+                    <Link href={'#features'}>
                         Features
                     </Link>
                 </li>
                 <li className='text-gray-500 hover:text-gray-950'>
-                    <Link href={'#'}>
+                    <Link href={'#pricing'}>
                         Pricing
                     </Link>
                 </li>
                 <li className='text-gray-500 hover:text-gray-950'>
-                    <Link href={'#'}>
+                    <Link href={'#faq'}>
                         FAQs
                     </Link>
                 </li>

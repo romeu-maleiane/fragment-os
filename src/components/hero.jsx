@@ -33,7 +33,7 @@ function Hero() {
     }, [])
 
     return (
-        <section className='hero'>
+        <section id='hero'>
             <div className='wrapper flex-x-center w-full gap-30 px-20'>
                 <div className='content'>
                     <div className='content-text'>

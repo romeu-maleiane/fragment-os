@@ -31,7 +31,7 @@ function Pricing() {
         })
 
     return (
-        <section className='pricing'>
+        <section id='pricing'>
             <div className='wrapper'>
                 <div className='max-w-3xl text-center'>
                     <h2>
