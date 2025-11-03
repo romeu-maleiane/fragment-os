@@ -9,6 +9,7 @@ import Testimonials from "@/components/testimonials";
 import Pricing from "@/components/pricing";
 import FAQ from "@/components/faq";
 import Newsletter from "@/components/newsletter";
+import Footer from "@/components/footer";
 
 
 export default function Home() {
@@ -25,6 +26,7 @@ export default function Home() {
       <Pricing />
       <FAQ />
       <Newsletter />
+      <Footer />
     </main>
   );
 }
