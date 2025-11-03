@@ -277,6 +277,21 @@ body {
       }
     }
   }
+
+  .newsletter {
+    @apply px-20 personalized-container py-20;
+    .wrapper {
+      @apply h-91 bg-gray-50 flex-col-center gap-12 px-5 rounded-4xl;
+
+      div > h2 {
+        @apply heading-2 text-gray-950 font-semibold pb-6;
+      }
+
+      div > h2 + p {
+        @apply text-xl text-gray-500 font-normal;
+      }
+    }
+  }
 }
 
 @theme inline {

@@ -8,6 +8,7 @@ import Features3 from "@/components/features3"
 import Testimonials from "@/components/testimonials";
 import Pricing from "@/components/pricing";
 import FAQ from "@/components/faq";
+import Newsletter from "@/components/newsletter";
 
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
       <Testimonials />
       <Pricing />
       <FAQ />
+      <Newsletter />
     </main>
   );
 }

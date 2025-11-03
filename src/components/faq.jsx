@@ -81,7 +81,6 @@ function FAQ() {
                     </AccordionItem>
                 </Accordion>
             </div >
-
         </section >
     )
 }
