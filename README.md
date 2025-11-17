@@ -4,6 +4,8 @@ This project was inspired by a Framer template and rebuilt from scratch using **
 
 🌈✨ The site features smooth animations that bring life to every scroll, creating an engaging and interactive experience! 🔥📱
 
+[Live Website](https://fragment-os.vercel.app/)
+
 ![Fragment OS Preview](https://drive.google.com/uc?id=1EgNx2jrNdAgA7iLpLJraVttOOzdfzyHG)
 
 ---
